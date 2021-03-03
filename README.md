@@ -98,7 +98,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/SQ8rqoI.gif' width=''>
+<img src='https://i.imgur.com/0QVsE8G.gif' width=''>
 
 ## Notes
 
