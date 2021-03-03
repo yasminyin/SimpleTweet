@@ -33,5 +33,16 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:autoLink="all"
         tools:text="This is my tweet!!!" />
+
+    <TextView
+        android:id="@+id/dateStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:text="TextView" />
 </RelativeLayout>

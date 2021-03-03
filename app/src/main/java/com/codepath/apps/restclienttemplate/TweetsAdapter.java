@@ -15,6 +15,7 @@ import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import org.w3c.dom.Text;
 
+import java.util.Date;
 import java.util.List;
 
 public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder> {
@@ -67,17 +68,20 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         ImageView ivProfileImage;
         TextView tvBody;
         TextView tvScreenName;
+        TextView dateStamp;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ivProfileImage = itemView.findViewById(R.id.ivProfileImage);
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
+            dateStamp = itemView.findViewById(R.id.dateStamp);
         }
 
         public void bind(Tweet tweet) {
             tvBody.setText(tweet.body);
             tvScreenName.setText(tweet.user.screenName);
+            dateStamp.setText(tweet.createdAt);
             Glide.with(context).load(tweet.user.profileImageUrl).into(ivProfileImage);
         }
     }
